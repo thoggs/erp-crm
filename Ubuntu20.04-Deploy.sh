@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Install PHP ad tips
-sudo apt install php7.4-common php7.4-cli php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-mbstring php7.4-bcmath php7.4-imap php7.4-xml php7.4-zip php7.4-fpm unzip
+sudo apt install -y nginx php7.4-common php7.4-cli php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-mbstring php7.4-bcmath php7.4-imap php7.4-xml php7.4-zip php7.4-fpm unzip
 
 # Install Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -36,5 +36,14 @@ php artisan route:cache
 # Optimizing View Loading
 php artisan view:cache
 
-# Start Artisan Serve in LocalHost
-php artisan serve --host=localhost
+# Start nginx in LocalHost
+sudo rm /etc/nginx/sites-available/default
+sudo cp erp-crm-laravel/default /etc/nginx/sites-available/
+sudo systemctl enable nginx
+sudo systemctl enable php7.4-fpm
+sudo systemctl start nginx
+sudo systemctl start php7.4-fpm
+
+# Success
+echo O Nginx está servindo o projeto em http://IP_da_Maquina:
+
