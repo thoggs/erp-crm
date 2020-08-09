@@ -13,7 +13,7 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 IMG
 
-- Criei um Script que automatiza o Deploy no Ubuntu 20.04 Server, bem como conforme dito, o guiarei nessa empreitada.
+- Criei um Script que automatiza o Deploy no Ubuntu 20.04 Server, ainda assim conforme dito, o guiarei nessa empreitada.
 
 - Criei um pipeline CI/CD no GitLab para validar a qualidade e integridade do código escrito, conforme pipeline status. 
 
