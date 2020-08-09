@@ -7,9 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## ERP-CRM
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O que segue trata-se de um guia de Deploy para a aplicação em questão.
+
+## Observações:
+
+- Toda a estrutura do banco de dados está sendo gerada de forma automatizada, a qual foi parametrizada e configurada usando PHP, ORM e o Laravel (dentro daquilo que foi proposto, utilizando MySQL)
+
+- A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados então sendo persistidos no banco de forma automatizada), alterando `$data->mail"` por qualquerCoisaQueNaoSejaUmEmail'. conforme segue: 
+
+IMG
+
+- Criei um Script que automatiza o Deploy no Ubuntu 20.04 Server, bem como conforme dito, o guiarei nessa empreitada.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
