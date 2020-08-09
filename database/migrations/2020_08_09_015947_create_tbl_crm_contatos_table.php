@@ -14,12 +14,12 @@ class CreateTblCrmContatosTable extends Migration
     public function up()
     {
         Schema::create('tbl_crm_contatos', function (Blueprint $table) {
-            $table->id()->autoIncrement()->primary();
-            $table->string('name');
-            $table->string('estado');
-            $table->string('cidade');
-            $table->string('mail');
-            $table->date('data')->useCurrent();
+            $table->id()->autoIncrement();
+            $table->char('name', 100);
+            $table->char('estado', 50);
+            $table->char('cidade', 50);
+            $table->char('mail', 100);
+            $table->timestamp('data')->useCurrent();
             $table->string('status')->default('1');
             $table->timestamps();
         });

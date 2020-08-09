@@ -6,6 +6,13 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTblErpContatosTable extends Migration
 {
+    public $data;
+
+    public function getData()
+    {
+        return $this->data;
+    }
+
     /**
      * Run the migrations.
      *
@@ -14,12 +21,12 @@ class CreateTblErpContatosTable extends Migration
     public function up()
     {
         Schema::create('tbl_erp_contatos', function (Blueprint $table) {
-            $table->id()->autoIncrement()->primary();
+            $table->id()->autoIncrement();
             $table->string('name');
             $table->string('estado');
             $table->string('cidade');
             $table->string('mail');
-            $table->date('data')->useCurrent();
+            $table->timestamp('data')->useCurrent();
             $table->string('status')->default('1');
             $table->timestamps();
         });
