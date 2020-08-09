@@ -3,7 +3,7 @@
 # Install PHP ad tips
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y nginx php7.4-common php7.4-cli php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-mbstring php7.4-bcmath php7.4-imap php7.4-xml php7.4-zip php7.4-fpm unzip
+sudo apt install -y nginx php7.4-common php7.4-cli php7.4-gd php7.4-mysql php7.4-curl php7.4-intl php7.4-mbstring php7.4-bcmath php7.4-imap php7.4-xml php7.4-zip php7.4-fpm unzip mysql-server
 
 # Install Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -38,6 +38,14 @@ php artisan route:cache
 # Optimizing View Loading
 php artisan view:cache
 
+# Configure DataBase
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Erp-Crm1321';
+FLUSH PRIVILEGES;
+exit
+php artisan migrate
+php artisan db:seed --class=ErpCrm
+
 # Start nginx in LocalHost
 sudo rm /etc/nginx/sites-available/default
 sudo cp default /etc/nginx/sites-available/
@@ -48,6 +56,7 @@ sudo systemctl start php7.4-fpm
 
 # Prepare
 cd .. && sudo chown -R www-data:www-data erp-crm-laravel/
+sudo mv -rf erp-crm-laravel/ /var/www/html/
 sudo systemctl restart php7.4-fpm
 sudo systemctl restart nginx
 

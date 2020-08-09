@@ -13,23 +13,25 @@ class ErpCrm extends Seeder
      */
     public function run()
     {
-        foreach (range(0, 4) as $number)
+        for ($i = 0; $i < 5; $i++)
         {
             DB::table('tbl_erp_contatos')->insert([
                 'name' => Str::random(10),
                 'estado' => Str::random(10),
                 'cidade' => Str::random(10),
-                'mail' => Str::random(10).'@gmail.com'
+                'mail' => Str::random(10).'@gmail.com',
+                'status' => rand(0, 1)
             ]);
         }
 
-        foreach (range(0, 4) as $number)
+        for ($i = 0; $i < 5; $i++)
         {
             DB::table('tbl_crm_contatos')->insert([
                 'name' => Str::random(10),
                 'estado' => Str::random(10),
                 'cidade' => Str::random(10),
-                'mail' => Str::random(10).'@gmail.com'
+                'mail' => Str::random(10).'@gmail.com',
+                'status' => rand(0, 1)
             ]);
         }
     }
