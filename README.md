@@ -24,7 +24,7 @@ IMG
 
 ## Deploy no Ubuntu 20.04 Server LTS
 
-- Caso não tenha a o direetório `/var/www/html`, crie com o comando:
+- Caso não tenha a o diretório `/var/www/html`, crie com o comando:
 ```sh
 sudo mkdir /var/www && sudo mkdir /var/www/html
 ```
