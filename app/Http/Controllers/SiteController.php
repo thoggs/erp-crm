@@ -12,7 +12,7 @@ class SiteController extends Controller
         $tbl_crm_contatos = DB::table('tbl_crm_contatos')->get();
         $tbl_erp_contatos = DB::table('tbl_crm_contatos')->get();
 
-        return view('welcome', [
+        return view('site', [
             'crm_contatos' => $tbl_crm_contatos,
             'erp_contatos' => $tbl_erp_contatos
         ]);
