@@ -35,7 +35,7 @@
         <th class="text-center" scope="row">{{ $data->id }}</th>
         <td class="text-center">{{ $data->name }}</td>
         <td class="text-center">
-          @if( filter_var('thiago', FILTER_VALIDATE_EMAIL) )
+          @if( filter_var($data->mail, FILTER_VALIDATE_EMAIL) )
             {{ $data->mail }}
           @else
             Inválido!
