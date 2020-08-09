@@ -39,10 +39,7 @@ php artisan route:cache
 php artisan view:cache
 
 # Configure DataBase
-sudo mysql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Erp-Crm1321';
-FLUSH PRIVILEGES;
-exit
+php artisan db:create erp_crm
 php artisan migrate
 php artisan db:seed --class=ErpCrm
 
