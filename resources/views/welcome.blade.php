@@ -12,41 +12,81 @@
 
 </head>
 <body>
-<div class="container pt-lg-5">
-  <div class="row row-cols-auto justify-content-center pt-lg-4">
-    <div class="col">
-      <ul class="list-group list-group-horizontal">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-      <ul class="list-group list-group-horizontal-sm">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-      <ul class="list-group list-group-horizontal-md">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-      <ul class="list-group list-group-horizontal-lg">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-      <ul class="list-group list-group-horizontal-xl">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-      <ul class="list-group list-group-horizontal-xxl">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-      </ul>
-    </div>
-  </div>
+<div class="pt-lg-5">
+  <table class="table table-bordered border-primary">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-Mail</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Data/Hora</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach($crm_contatos as $key => $data)
+      <tr>
+        <th scope="row">{{ $data->id }}</th>
+        <td>{{ $data->name }}</td>
+        <td>
+          @if($data->mail == '*.com')
+            {{ $data->mail }}
+          @else
+            Invalido!
+          @endif
+        </td>
+        <td>{{ $data->estado }}</td>
+        <td>{{ $data->data }}</td>
+        <td>
+          @if($data->status)
+            {{ $data->status }}
+          @else
+            Desativado
+          @endif
+        </td>
+      </tr>
+    @endforeach
+    </tbody>
+  </table>
+</div>
+<div class="pt-lg-5">
+  <table class="table table-bordered border-primary">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-Mail</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Data/Hora</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach($erp_contatos as $key => $data)
+      <tr>
+        <th scope="row">{{ $data->id }}</th>
+        <td>{{ $data->name }}</td>
+        <td>
+          @if($data->mail == '*.com')
+            {{ $data->mail }}
+          @else
+            Invalido!
+          @endif
+        </td>
+        <td>{{ $data->estado }}</td>
+        <td>{{ $data->data }}</td>
+        <td>
+          @if($data->status)
+            {{ $data->status }}
+          @else
+            Desativado
+          @endif
+        </td>
+      </tr>
+    @endforeach
+    </tbody>
+  </table>
 </div>
 <script type="application/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>

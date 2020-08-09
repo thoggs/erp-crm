@@ -6,13 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTblErpContatosTable extends Migration
 {
-    public $data;
-
-    public function getData()
-    {
-        return $this->data;
-    }
-
     /**
      * Run the migrations.
      *
