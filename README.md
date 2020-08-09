@@ -9,7 +9,7 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 - Toda a estrutura do banco de dados está sendo gerada de forma automatizada (aleatoriamente), a qual foi parametrizada e configurada usando PHP, ORM e o Laravel (dentro daquilo que foi proposto, utilizando MySQL)
 
-- A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados então sendo persistidos no banco de forma automatizada), alterando `$data->mail` por `'qualquerCoisaQueNaoSejaUmEmail'` conforme segue: 
+- A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados então sendo persistidos no banco de dados de forma automatizada), alterando `$data->mail` por `'qualquerCoisaQueNaoSejaUmEmail'` conforme segue: 
 
 IMG
 
