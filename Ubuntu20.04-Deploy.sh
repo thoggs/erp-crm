@@ -53,7 +53,7 @@ sudo systemctl start php7.4-fpm
 
 # Prepare
 cd .. && sudo chown -R www-data:www-data erp-crm-laravel/
-sudo mv -rf erp-crm-laravel/ /var/www/html/
+sudo mv erp-crm-laravel/ /var/www/html/
 sudo systemctl restart php7.4-fpm
 sudo systemctl restart nginx
 
