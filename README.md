@@ -1,6 +1,6 @@
 <p><img alt="IMG" src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 <a href="https://gitlab.com/thoggs/erp-crm-laravel/-/commits/master"><img alt="pipeline status" src="https://gitlab.com/thoggs/erp-crm-laravel/badges/master/pipeline.svg" /></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 
 ## ERP-CRM 
 O que segue trata-se de um guia de Deploy para a aplicação em questão.
