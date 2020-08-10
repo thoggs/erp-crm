@@ -15,6 +15,8 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 - A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados estão sendo persistidos no banco de dados de forma automatizada), alterando `$data->mail` por `'qualquerCoisaQueNaoSejaUmEmail',` [conforme imagem.](https://gitlab.com/thoggs/erp-crm-laravel/-/raw/master/resources/img/capt_index.png)
 
+- O Projeto tabém foi disponibilizado no [GitLab](https://gitlab.com/thoggs/erp-crm-laravel)
+
 ## Requisitos
 
 - [x] Ter o [Ubuntu 20.04 Server LTS](https://ubuntu.com/download/server/thank-you?version=20.04.1&architecture=amd64), instalado.
