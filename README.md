@@ -22,7 +22,7 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 - [x] Ter o [Ubuntu 20.04 Server LTS](https://ubuntu.com/download/server/thank-you?version=20.04.1&architecture=amd64), instalado.
 - [x] Acesso ao SHELL com permissão root.
 - [x] Conexão com a internet.
-- [x] Certifique-se de não ter nenhuma aplicação rodando na porta 80.
+- [x] Certifique-se de não ter nenhuma aplicação rodando na porta 80, no entando caso queira mudar a porta que o Nginx irá servir a aplicação, basta editar o arquivo default na raiz do projeto. 
 
 ## Deploy no Ubuntu 20.04 Server LTS
 
