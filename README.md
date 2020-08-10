@@ -13,11 +13,11 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 - Criei um Script que automatiza o Deploy no Ubuntu 20.04 Server, ainda assim conforme dito, o guiarei nessa empreitada.
 
-- Criei um pipeline CI/CD no GitLab para validar a qualidade e integridade do código escrito, conforme pipeline status. 
+- Criei um pipeline CI/CD no GitLab para validar a qualidade e integridade do código escrito, conforme [Pipeline Status](https://gitlab.com/thoggs/erp-crm-laravel/-/commits/master). 
 
-- A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados estão sendo persistidos no banco de dados de forma automatizada), alterando `$data->mail` por `'qualquerCoisaQueNaoSejaUmEmail',` [conforme imagem.](https://gitlab.com/thoggs/erp-crm-laravel/-/raw/master/resources/img/capt_index.png)
+- A forma mais simples de validar os emails e testar a validação, é diretamente no arquivo `index.blade.php` localizado na raiz do projeto em `resources/view/index.blade.php` (devido ao fato de que os dados estão sendo persistidos no banco de dados de forma automatizada), alterando `$data->mail` por `'qualquerCoisaQueNaoSejaUmEmail',` conforme [imagem.](https://gitlab.com/thoggs/erp-crm-laravel/-/raw/master/resources/img/capt_index.png)
 
-- O Projeto também foi disponibilizado no [GitLab](https://gitlab.com/thoggs/erp-crm-laravel), tornando possível conferir a estrutura do pipeline na CI/CD do GitLab
+- O Projeto também foi disponibilizado no [GitLab](https://gitlab.com/thoggs/erp-crm-laravel), tornando possível conferir a [Estrutura do Pipeline](https://gitlab.com/thoggs/erp-crm-laravel/-/pipelines/175981945) na CI/CD do GitLab
 
 ## Requisitos
 
