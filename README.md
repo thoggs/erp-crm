@@ -59,4 +59,4 @@ cd /var/www/html && sudo git clone https://github.com/thoggs/erp-crm-laravel.git
 
 ## License
 
-Laravel license [MIT license](https://opensource.org/licenses/MIT).
+Project license [MIT license](https://opensource.org/licenses/MIT).
