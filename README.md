@@ -42,7 +42,7 @@ sudo mysql
 ```sh
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Erp-Crm1321';
 ```
-Para sair do MySQL digite: exit
+Você precisa sair do MySQL para continuar, digite: `exit`
 
 4) - Caso não tenha o diretório `/var/www/html`, crie com o comando:
 ```sh
