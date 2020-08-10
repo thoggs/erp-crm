@@ -15,10 +15,10 @@ class CreateTblCrmContatosTable extends Migration
     {
         Schema::create('tbl_crm_contatos', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->char('name', 100);
+            $table->char('nome', 100);
             $table->char('estado', 50);
             $table->char('cidade', 50);
-            $table->char('mail', 100);
+            $table->char('email', 100);
             $table->timestamp('data')->useCurrent();
             $table->string('status')->default('1');
             $table->timestamps();

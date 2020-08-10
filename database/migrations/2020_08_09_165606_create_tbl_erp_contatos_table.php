@@ -15,10 +15,10 @@ class CreateTblErpContatosTable extends Migration
     {
         Schema::create('tbl_erp_contatos', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->string('name');
+            $table->string('nome');
             $table->string('estado');
             $table->string('cidade');
-            $table->string('mail');
+            $table->string('email');
             $table->timestamp('data')->useCurrent();
             $table->string('status')->default('1');
             $table->timestamps();

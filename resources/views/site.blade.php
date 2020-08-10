@@ -33,10 +33,10 @@
     @foreach( $crm_contatos as $key => $data )
       <tr>
         <th class="text-center" scope="row">{{ $data->id }}</th>
-        <td class="text-center">{{ $data->name }}</td>
+        <td class="text-center">{{ $data->nome }}</td>
         <td class="text-center">
-          @if( filter_var($data->mail, FILTER_VALIDATE_EMAIL) )
-            {{ $data->mail }}
+          @if( filter_var($data->email, FILTER_VALIDATE_EMAIL) )
+            {{ $data->email }}
           @else
             Inválido!
           @endif
@@ -74,10 +74,10 @@
     @foreach($erp_contatos as $key => $data)
       <tr>
         <th class="text-center" scope="row">{{ $data->id }}</th>
-        <td class="text-center">{{ $data->name }}</td>
+        <td class="text-center">{{ $data->nome }}</td>
         <td class="text-center">
-          @if( filter_var($data->mail, FILTER_VALIDATE_EMAIL) )
-            {{ $data->mail }}
+          @if( filter_var($data->email, FILTER_VALIDATE_EMAIL) )
+            {{ $data->email }}
           @else
             Inválido!
           @endif
