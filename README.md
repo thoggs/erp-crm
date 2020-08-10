@@ -33,7 +33,7 @@ sudo apt install mysql-server
 sudo mysql
 ```
 
-3) - Dentro do MySQL defina a senha Erp-Crm1321 para o usuário root, com o comando:
+3) - Dentro do MySQL defina a senha (Erp-Crm1321) para o usuário root, com o comando:
 ```sh
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Erp-Crm1321';
 ```
