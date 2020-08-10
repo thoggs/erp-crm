@@ -7,7 +7,7 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 ## Observações:
 
-- Toda a estrutura do banco de dados está sendo gerada de forma automatizada (aleatoriamente), a qual foi parametrizada e configurada usando PHP, ORM e o Laravel (dentro daquilo que foi proposto, utilizando MySQL)
+- Toda a estrutura do banco de dados está sendo gerada de forma automatizada (populando as tabelas aleatoriamente), a qual foi parametrizada e configurada usando PHP, ORM e o Laravel (dentro daquilo que foi proposto, utilizando MySQL)
 
 - Criei um Script que automatiza o Deploy no Ubuntu 20.04 Server, ainda assim conforme dito, o guiarei nessa empreitada.
 
