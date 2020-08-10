@@ -25,7 +25,7 @@ O que segue trata-se de um guia de Deploy para a aplicação em questão.
 
 1) - Instale o MySQL com o comando:
 ```sh
-sudo apt install mysql-server
+sudo apt update && sudo apt install -y mysql-server
 ```
 
 2) - Agora acesse o MySQL:
