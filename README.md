@@ -49,7 +49,7 @@ Para sair do MySQL digite: exit
 sudo mkdir /var/www && sudo mkdir /var/www/html
 ```
 
-5) - Clone os arquivos do projeto e execute o script de Deploy:
+5) - Clone os arquivos do projeto e execute o Script de Deploy:
 ```sh
 cd /var/www/html && sudo git clone https://github.com/thoggs/erp-crm-laravel.git && cd erp-crm-laravel/ && sudo sh Ubuntu20.04-Deploy.sh
 ```
