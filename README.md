@@ -3,7 +3,7 @@
 <a href="https://opensource.org/licenses/MIT"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 
 ## ERP-CRM 
-O que segue trata-se de um guia de Deploy para a aplicação em questão.
+O que segue trata-se de um projeto simples que me foi requisitado durante uma entrevista de emprego, seguido de um guia de Deploy para a aplicação em questão.
 
 ## Observações:
 
